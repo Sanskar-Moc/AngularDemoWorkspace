@@ -1,0 +1,30 @@
+<h3>Uses of services in Angular</h3>
+<h3>{{somedata}}</h3>
+<h3>LocalData : </h3>
+<ul *ngFor="let book of localbookList">
+  <hr>
+  <li>id: {{book.id}}</li>
+  <li>title: {{book.title}}</li>
+  <li>year: {{book.year}}</li>
+  <li>author: {{book.author}}</li>
+  <hr>
+</ul>
+<!-- <h3>RemoteData : </h3>
+<ul *ngFor="let book of remotebookList">
+  <hr>
+  <li>userId: {{book.userId}}</li>
+  <li>id: {{book.id}}</li>
+  <li>title: {{book.title}}</li>
+  <li>body: {{book.body}}</li>
+  <hr>
+</ul> -->
+<h3>StudentData : </h3>
+<ul *ngFor="let st of studentsList">
+  <hr>
+  <li>id: {{st.id}}</li>
+  <li>name: {{st.name}}</li>
+  <li>age: {{st.age}}</li>
+  <li>mobile: {{st.mobile}}</li>
+  <li>address: {{st.address}}</li>
+  <hr>
+</ul>

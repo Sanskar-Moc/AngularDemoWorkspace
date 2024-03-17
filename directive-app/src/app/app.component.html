@@ -1,0 +1,23 @@
+<h1>Employees: {{employees}}</h1>
+
+<h2 [ngClass]="{redclass : myPwd == 'Sanskar'}">Enter Password</h2>
+<input type="password" [(ngModel)]="myPwd" />
+
+<ul *ngIf="myPwd=='Sanskar'">
+  <li *ngFor="let emp of employees">
+    {{emp}}
+  </li>
+</ul>
+
+<h3 [ngStyle]="{color:myPwd == 'Sanskar'?'green':'black'}">Individual List</h3>
+
+<div mydirective>
+  This is the DIV tag to which custom attribute directive is applied
+</div>
+<p mydirective >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis voluptates ex officia sapiente. Non nobis soluta
+  excepturi maxime assumenda hic molestias id at aliquam, tempore, asperiores voluptas fugiat nostrum magni. Distinctio
+  doloremque beatae facere nemo quisquam deserunt. Eligendi sed voluptatum harum molestias voluptates nam assumenda
+  nihil, facilis distinctio nulla expedita ab porro placeat veritatis odit quam pariatur repellat est doloremque esse
+  cupiditate modi. Voluptatum quidem veritatis dolore delectus eum iusto quae dolores, magnam beatae facere doloribus
+  quos, mollitia nulla praesentium incidunt exercitationem labore quisquam placeat temporibus sequi qui earum. Numquam
+  similique praesentium in, voluptas ducimus reiciendis perspiciatis repudiandae at ab?</p>
